@@ -1,3 +1,5 @@
+### The Code:
+
 ```python
 import numpy as np
 import matplotlib.pyplot as plt
@@ -71,21 +73,6 @@ plt.legend()
 
 
 
-    
-![png](output_1_2.png)
-    
-
-
-### Data.csv:
-This file contains the data collected at 4 equidistant points along the Bedian canal, with the values in the columns representing the water level at that point, and each row representing a minute in time at which the data was collected. So, each column is a point in the canal and each row is the water level in the canal at those points at a given minute in time, collected over 90 minutes.
-
-### Bedian.py:
-
-#### First graph:
-In this file, the first graph titled "Water level recorded from sensors" used the plt.plot function to plot each of the points in the above data file. The data points are colored according to the column they belong to, and the graph thus made gives us an approximate understanding of the water level at each of the equidistant columns.
-
-
-
 ```python
 t3 = threeKm.index
 
@@ -105,6 +92,24 @@ plt.show()
 
     [ 3.16868207e-09 -5.95317309e-07  3.11436335e-05 -1.02964523e-04
      -1.14521057e-02  4.47965734e+00]
+
+
+    
+
+    
+## Explanation
+
+### Data.csv:
+This file contains the data collected at 4 equidistant points along the Bedian canal, with the values in the columns representing the water level at that point, and each row representing a minute in time at which the data was collected. So, each column is a point in the canal and each row is the water level in the canal at those points at a given minute in time, collected over 90 minutes.
+
+### Bedian.py:
+Running this file yields us the following graphs:
+
+![png](output_1_2.png)
+
+#### First graph:
+In this file, the first graph titled "Water level recorded from sensors" used the plt.plot function to plot each of the points in the above data file. The data points are colored according to the column they belong to, and the graph thus made gives us an approximate understanding of the water level at each of the equidistant columns.
+
 
 
 
