@@ -12,7 +12,7 @@ from scipy.optimize import curve_fit
 from scipy.interpolate import interp1d 
 
 import pandas as pd
-data = pd.read_csv("../data/data.csv") 
+data = pd.read_csv("../bedian/data.csv") 
 print(data.head())
 zeroKm = data.loc[:,"0km"] 
 print(zeroKm)
