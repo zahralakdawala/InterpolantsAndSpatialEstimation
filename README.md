@@ -107,8 +107,6 @@ Running this file yields us the following graphs:
 
 
 ![png](output_1_2.png)
-
-#### First graph:
 The above graph titled "Water level recorded from sensors" used the plt.plot function to plot each of the points in the above data file. The data points are colored according to the column they belong to, and the graph thus made gives us an approximate understanding of the water level at each of the equidistant columns.
 
 
@@ -118,6 +116,5 @@ The above graph titled "Water level recorded from sensors" used the plt.plot fun
 
     
 ![png](output_3_1.png)
-
 #### Second graph:
 For each of the 4 columns in the canal, the water level was measured at 64 different minutes spread over one and a half hour.To be able to interpolate the water level at a given column at a different time or day, we try to find a curve which can represent the underlying trends in our data. Curves on graphs are represented by polynomial equations. Had we chosen a polynomial of degree 64 (degree being the highest power in the polynomial) to represent this data, our curve would pass through each of the collected points. But for interpolation to make sense, we fit our data to a polynomial of degree 5, so that when we try to get an estimate at another time on another day, it wouldn't be too far off from our generalized curve. Which of course, is generalized since we didn't overfit it pass through all 64 points.
